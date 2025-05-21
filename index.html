@@ -155,6 +155,34 @@
 <section class="books" id="books">
 
 </section>
+
+<!-- <section class="modal">
+    <div class="modalka-bx">
+        <a href="#" class="modal-btn">Шығу</a>
+        <img src="https://prog-bilim.kz/img/phpmysql.png" alt="suret">
+    </div>
+</section> -->
+
+
+<section class="modal" id="myModal">
+  <div class="modalka-bx">
+    <a href="#" class="modal-btn" id="closeModal">Шығу</a>
+    <img src="https://prog-bilim.kz/img/phpmysql.png" alt="suret">
+  </div>
+</section>
+
+<script>
+  // Модалканы көрсету
+  window.onload = function () {
+    document.getElementById('myModal').classList.add('show');
+  };
+
+  // Жабу батырмасы
+  document.getElementById('closeModal').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.getElementById('myModal').classList.remove('show');
+  });
+</script>
 </body>
 
 </html>
