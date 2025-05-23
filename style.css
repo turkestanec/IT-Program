@@ -73,8 +73,7 @@
       margin-left: 10px;
     }
 
-    .thr-box {
-      background: linear-gradient(90deg, rgba(23, 162, 184, 0.07) 0%, rgba(23, 162, 184, 0.13) 35%, rgba(23, 162, 184, 0.21) 100%);
+    .thr-box{
       padding: 10px 93px;
       display: flex;
       justify-content: center;
@@ -83,27 +82,75 @@
     }
 
     .thr-box .w-bx {
+     
       margin: 10px;
       width: 25%;
     }
 
-    .w-bx p {
+    .w-bx>.bor {
       background-color: #219653;
       color: #fff;
       padding: 8px 16px;
+      border-bottom: solid 1px black;
     }
 
-    .pad16 {
+   .w-bx>.pad16 {
       background-color: #fff;
       color: #212529;
       padding: 16px;
     }
 
-    .course h1 {
+    .course h1,.books h1 {
       color: #6c757d;
       margin-left: 280px;
     }
+    .books,.course{
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRKjM4WpqsXRm8mvlB3AFGKC-tVbeOCLIzfg&s');
+      opacity: 1;
+      z-index: 100;
+    }
+.books .c-bx{
+  
+   display: flex;
+      justify-content: center;
+      width: 80%;
+      margin: auto;
+      padding-left: 10px;
+}
 
+.books .course-bx {
+      width: 33%;
+      border: 1px solid black;
+      display: inline;
+      /* justify-content: space-between; */
+      /* flex-direction: column; */
+      /* align-items: center; */
+      border-radius: 12px;
+      margin-left: 10px;
+      background-color: #fff;
+}
+
+.books .course-bx img {
+  margin-left: 10px;
+      width: 185px;
+      height: 120px;
+      margin-top: 0;
+      border-radius: 10px;
+    }
+
+    .books .course-bx h3 {
+      position: relative;
+      bottom: 30px;
+      margin-bottom: 0;
+      font-size: 20px;
+      color: #6c757d;
+      /* margin-left: 200px; */
+      margin-top: 0;
+    }
+
+    .image-bx{
+      display: inline-block;
+    }
     .c-bx {
       display: flex;
       justify-content: space-evenly;
@@ -119,6 +166,7 @@
       align-items: center;
       border-radius: 12px;
       padding: 10px;
+      background-color: #fff;
     }
 
     .course-bx img {
