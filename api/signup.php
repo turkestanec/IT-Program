@@ -12,13 +12,12 @@ if(isset($email, $username, $password, $repeatpas) &&
 
     if($password != $repeatpas){
         echo 'Парольді қате енгіздіңіз';
-        exit(); // тоқтату
+        exit(); 
     }
 
-    // Қауіпсіздік үшін парольді хештеу
+ 
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-    // SQL инъекциядан қорғану
     $email = mysqli_real_escape_string($connection, $email);
     $username = mysqli_real_escape_string($connection, $username);
 
