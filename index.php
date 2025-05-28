@@ -237,12 +237,14 @@ display: flex;
 
   <header class="header">
     <nav class="navbar">
-      <a href="#home">Басты бет</a>
+      <a href="index.php">Басты бет</a>
       <a href="#about">Біз жайлы</a>
       <a href="#course">Курстар</a>
       <a href="#books">Кітаптар</a>
       <a href="#contact">Байланыс</a>
       <a href="register.php">Кіру</a>
+      <a href="cart.php">Бағасы</a>
+
     </nav>
   </header>
 

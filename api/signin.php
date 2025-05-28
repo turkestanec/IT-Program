@@ -23,7 +23,7 @@ if (isset($email) && isset( $password) && strlen($email) > 5 && strlen($password
     session_start();
    $_SESSION['id']=$user_about['id'];
    $_SESSION['username']=$user_about['username'];
-    header('Location: http://localhost/%d0%ba%d0%bc4%20%d0%bf%d1%80%d0%b0%d0%ba%d1%82%d0%b8%d0%ba%d0%b0/20%2005%2025/');
+    header('Location: http://localhost/%d0%ba%d0%bc4%20%d0%bf%d1%80%d0%b0%d0%ba%d1%82%d0%b8%d0%ba%d0%b0/20%2005%2025/cart.php');
  
 }else{
     echo 'Пайдаланушы табылмады';
