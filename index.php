@@ -191,6 +191,44 @@
       text-decoration: none;
       border-radius: 5px;
     }
+
+    .rem2{
+      font-size: 24px;
+      color: #6c757d;
+      margin:20px 0;
+      margin-left:513px;
+    }
+
+.ft-bx{
+display: flex;
+ justify-content: space-around;
+}
+    .ft-bx img{
+      width: 30px;
+      height:30px
+    }
+    /* .foot-bx{
+      text-align:center;
+      display: flex;
+ justify-content: center;
+    } */
+
+    .flex{
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .txt1>p{
+      margin:5px 0;
+    }
+
+    .ft-bx>a{
+      margin:0 10px;
+    }
+    .txt5{
+    color: #0d6efd;
+    text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -411,11 +449,24 @@
   </section>
 
    <section class="about" id="about">
-    <div class="txt">
-      <p>Біздің мақсат:</p>
-      <p class="txt20">қашықтықтан сапалы және заманауи білім беру</p>
+    <div class="foot-bx">
+      <p class="rem2">Бізбен байланыс:</p>
+      <div class="flex">
+      <div class="ft-bx">
+    <div class="txt1 ">
+      <p>Тасбулатова Алия Алтаевна</p>
+      <p> <a href="index.php" class="txt5">+7-(777)-777-77-77</a></p>
+      <p>Шымкент қаласы</p>
     </div>
-   
+   </div>
+
+      <div class="ft-bx">
+<a href="https://prog-bilim.kz/img/instagram.png"><img src="https://prog-bilim.kz/img/instagram.png" alt=""></a>
+<a href="https://www.youtube.com/channel/UCblCC6Vjxd9bpKct7iA4Gaw"><img src="https://prog-bilim.kz/img/youtube.png" alt=""></a>
+<a href="https://prog-bilim.kz/img/youtube.png"><img src="https://prog-bilim.kz/img/whatsapp.png" alt=""></a>
+      </div>
+   </div>
+ </div>
   </section>
 
 

@@ -6,35 +6,36 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 $repeatpas = $_POST['repeatpas'];
 
-if(isset($email, $username, $password, $repeatpas) &&
-   strlen($email) > 5 && strlen($username) > 5 &&
-   strlen($password) > 5 && strlen($repeatpas) > 5) {
+if (isset($email, $username, $password, $repeatpas) &&
+    strlen($email) > 5 && strlen($username) > 5 &&
+    strlen($password) > 5 && strlen($repeatpas) > 5) {
 
-    if($password != $repeatpas){
+    if ($password != $repeatpas) {
         echo 'Парольді қате енгіздіңіз';
         exit(); 
     }
 
- 
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-
+    // SQL Injection-ге қарсы өңдеу
     $email = mysqli_real_escape_string($connection, $email);
     $username = mysqli_real_escape_string($connection, $username);
+    $password = mysqli_real_escape_string($connection, $password); // міндетті!
 
-    $query = "INSERT INTO users (email, username, password) VALUES ('$email', '$username', '$hashed_password')";
+    // Хэштемей жазамыз
+    $query = "INSERT INTO users (email, username, password) VALUES ('$email', '$username', '$password')";
     $user_query = mysqli_query($connection, $query);
 
-    if(!$user_query){
+    if (!$user_query) {
         echo 'Сұраныс орындалмады!';
         exit();
     }
 
-    header('Location:  http://localhost/%d0%ba%d0%bc4%20%d0%bf%d1%80%d0%b0%d0%ba%d1%82%d0%b8%d0%ba%d0%b0/20%2005%2025/login.php');
+    header('Location: http://localhost/%d0%ba%d0%bc4%20%d0%bf%d1%80%d0%b0%d0%ba%d1%82%d0%b8%d0%ba%d0%b0/20%2005%2025/login.php');
     exit();
 
 } else {
     echo 'Мәліметтерді толық енгізіңіз!';
 }
+
 
 
 
