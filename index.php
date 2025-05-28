@@ -207,6 +207,7 @@ display: flex;
       width: 30px;
       height:30px
     }
+    
     /* .foot-bx{
       text-align:center;
       display: flex;
@@ -225,6 +226,7 @@ display: flex;
     .ft-bx>a{
       margin:0 10px;
     }
+
     .txt5{
     color: #0d6efd;
     text-decoration: underline;

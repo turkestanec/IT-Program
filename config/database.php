@@ -8,6 +8,8 @@ $connection = mysqli_connect($localhost, $login, $password, $databaseName);
 
 if(!$connection){
     echo 'Байланыспады';
+}else{
+    echo'MaKe';
 }
 
 ?>
