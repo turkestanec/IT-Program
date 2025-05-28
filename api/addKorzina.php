@@ -3,7 +3,7 @@ include '../config/database.php';
 session_start();
 
 $course_id = $_GET['id'];
-$user_id = $_GET['id'];
+$user_id = $_SESSION['id'];
 if(isset($course_id) && isset($user_id)){
     $query = "INSERT INTO korzina (course_id, user_id) VALUES ('$course_id' , '$user_id')";
     $korzina_query = mysqli_query($connection, $query);

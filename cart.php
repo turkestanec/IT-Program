@@ -38,11 +38,71 @@ include 'config/database.php';
         <div class="course-bx">
           <img src="<?php echo $row['img'] ?>" alt="Course">
           <h3><?php echo $row['name'] ?></h3>
+          <h3><?php echo $row['price'] ?> ₸ </h3>
               <input type="hidden" name="course_id" value="<?php echo $row['id']; ?>">
-             <a href='api/addKorzina.php?id=<?php echo $row ['id'];?>'><button ><?php echo $row['price'] ?> ₸ | Себетке қосу</button></a> 
+             <a href='api/addKorzina.php?id=<?php echo $row ['id'];?>'><button > Себетке қосу</button></a> 
       
         </div>
-      <?php } ?>
+      <?php 
+    }
+     ?>
+    </div>
+    <br>
+      <div class="c-bx">
+      <?php
+      $course = 'SELECT * FROM course';
+      $course_query = mysqli_query($connection, $course);
+      while($row = mysqli_fetch_assoc($course_query)) {
+      ?>
+        <div class="course-bx">
+          <img src="<?php echo $row['img'] ?>" alt="Course">
+          <h3><?php echo $row['name'] ?></h3>
+          <h3><?php echo $row['price'] ?> ₸ </h3>
+              <input type="hidden" name="course_id" value="<?php echo $row['id']; ?>">
+             <a href='api/addKorzina.php?id=<?php echo $row ['id'];?>'><button > Себетке қосу</button></a> 
+      
+        </div>
+      <?php 
+    }
+     ?>
+    </div>
+    <br>
+      <div class="c-bx">
+      <?php
+      $course = 'SELECT * FROM course';
+      $course_query = mysqli_query($connection, $course);
+      while($row = mysqli_fetch_assoc($course_query)) {
+      ?>
+        <div class="course-bx">
+          <img src="<?php echo $row['img'] ?>" alt="Course">
+          <h3><?php echo $row['name'] ?></h3>
+          <h3><?php echo $row['price'] ?> ₸ </h3>
+              <input type="hidden" name="course_id" value="<?php echo $row['id']; ?>">
+             <a href='api/addKorzina.php?id=<?php echo $row ['id'];?>'><button > Себетке қосу</button></a> 
+      
+        </div>
+      <?php 
+    }
+     ?>
+    </div>   
+     <br>
+      <div class="c-bx">
+      <?php
+      $course = 'SELECT * FROM course';
+      $course_query = mysqli_query($connection, $course);
+      while($row = mysqli_fetch_assoc($course_query)) {
+      ?>
+        <div class="course-bx">
+          <img src="<?php echo $row['img'] ?>" alt="Course">
+          <h3><?php echo $row['name'] ?></h3>
+          <h3><?php echo $row['price'] ?> ₸ </h3>
+              <input type="hidden" name="course_id" value="<?php echo $row['id']; ?>">
+             <a href='api/addKorzina.php?id=<?php echo $row ['id'];?>'><button > Себетке қосу</button></a> 
+      
+        </div>
+      <?php 
+    }
+     ?>
     </div>
   </section>
 </body>
