@@ -15,12 +15,12 @@ if (isset($email, $username, $password, $repeatpas) &&
         exit(); 
     }
 
-    // SQL Injection-ге қарсы өңдеу
+ 
     $email = mysqli_real_escape_string($connection, $email);
     $username = mysqli_real_escape_string($connection, $username);
-    $password = mysqli_real_escape_string($connection, $password); // міндетті!
+    $password = mysqli_real_escape_string($connection, $password); 
 
-    // Хэштемей жазамыз
+ 
     $query = "INSERT INTO users (email, username, password) VALUES ('$email', '$username', '$password')";
     $user_query = mysqli_query($connection, $query);
 

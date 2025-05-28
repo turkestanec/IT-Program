@@ -196,7 +196,7 @@
       font-size: 24px;
       color: #6c757d;
       margin:20px 0;
-      margin-left:513px;
+      margin-left:580px;
     }
 
 .ft-bx{
